@@ -461,7 +461,7 @@ def filtScr():
     else:
         lcd.displayString("PHCOMP ", 0, 5)
         lcd.displayString("| ",0, 64)
-        if fil_sp == 0 : 
+        if ph_comp == 0 : 
             lcd.displayString("DIS", 0, 80)
         else :                
             lcd.displayString("EN", 0, 80)    
@@ -745,6 +745,8 @@ def main():
     ph_comp = status_M
     getMuteStatus(de_ctrl)
     de_emp = status_M
+    getFilterStatus()
+    fil_sp = filter_cur
     while 1:
 	    if led_off_counter == 950:
 		LED_FLAG = 1
