@@ -205,7 +205,8 @@ then
                 echo "******************************************"
                 echo "******************************************"
 		yes | pacman -S python2-pip gcc
-		pip2 install RPi.GPIO
+#		pip2 install RPi.GPIO
+		CFLAGS="-fcommon" pip2 install rpi.gpio
 		pip2 install smbus
 		yes | pacman -S python2-pillow
 		yes | pacman -S inetutils
