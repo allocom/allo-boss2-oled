@@ -7,7 +7,7 @@ ssh login
 
 cd /opt	
 
-wget https://raw.githubusercontent.com/allocom/allo_boss2_oled/main/boss2_oled.tar.gz
+wget https://raw.githubusercontent.com/allocom/allo-boss2-oled/main/boss2_oled.tar.gz
 
 tar -zxvf boss2_oled.tar.gz
 
